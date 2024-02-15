@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Greenway Mobility</title>
+    <link rel="icon" type="image/x-icon" href="./public/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="navbar-content">
+        <div class="navbar">
+            <div class="gwm-logo">
+                <div class="logo">
+                    <img src="./public/logo.png" />
+                </div>
+                <div class="logo-text">
+                    <p>GreenWay Mobility</p>
+                </div>
+            </div>
+            <div class="notify-me" id="notify-trigger">
+                <p href="">Notify Me</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="note" id="notify-div">
+        <div class="notify">
+            <div class="cancel" id="cancel-notify">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path d="M18 6L6 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </div>
+
+            <div class="details-all">
+                <div class="form-page">
+                    <div class="contact-us">
+                        <p>Contact Us</p>
+                        <form id="myForm" action="https://formspree.io/f/xbjngpbv" method="POST">
+                            <div class="form-container">
+                                <div class="form">
+                                    <div class="name">
+                                        <div class="name-label">
+                                            <p>Your name</p>
+                                            <input type="text" name="Name" required autocomplete="name" />
+                                        </div>
+                                    </div>
+                                    <div class="name">
+                                        <div class="name-label">
+                                            <p>Email address</p>
+                                            <input type="email" name="Email" required autocomplete="email" />
+                                        </div>
+                                    </div>
+                                    <div class="name">
+                                        <div class="name-label">
+                                            <p>Phone Number</p>
+                                            <input type="tel" name="Phone Number" required autocomplete="tel" />
+                                        </div>
+                                    </div>
+                                    <div class="name">
+                                        <div class="message">
+                                            <p>Message</p>
+                                            <textarea name="Message"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="check-box">
+                                <input type="checkbox" name="Terms and Conditions" required />
+                                <p>
+                                    You agree to our friendly <a href="">privacy policy</a>.
+                                </p>
+                            </div>
+
+                            <button type="submit">Contact Us</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="others">
+                    <div class="line"></div>
+                    <div class="Info">
+                        <div class="Info-detail">
+                            <a href="tel:+919167480227" id="phoneNumber">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z"
+                                        fill="#667085" />
+                                </svg>
+                                <p>+91 91674 80227</p>
+                            </a>
+                        </div>
+                        <div class="Info-detail">
+                            <a href="mailto:Info@greenwaymobility.com" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"
+                                        fill="#667085" />
+                                </svg>
+                                <p>Info@greenwaymobility.com</p>
+                            </a>
+                        </div>
+                        <div class="add">
+                            <a href="https://maps.app.goo.gl/PcMMHn6eUKsctb2R7?g_st=iw" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 15C14.2091 15 16 13.2091 16 11C16 8.79086 14.2091 7 12 7C9.79086 7 8 8.79086 8 11C8 13.2091 9.79086 15 12 15ZM12 13C10.8954 13 10 12.1046 10 11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11C14 12.1046 13.1046 13 12 13Z"
+                                        fill="#667085" />
+                                </svg>
+                                <p>
+                                    302, JP Sapphire, Nr. Aaykar Bhavan,<br />
+                                    Race Course Ring Road. Rajkot -<br />
+                                    360001, Gujarat, India
+                                </p>
+                            </a>
+                        </div>
+                        <div class="info-logo">
+                            <a target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <g clip-path="url(#clip0_1084_133)">
+                                        <path
+                                            d="M9.101 23.6909V15.7109H6.627V12.0439H9.101V10.4639C9.101 6.37895 10.949 4.48595 14.959 4.48595C15.36 4.48595 15.914 4.52795 16.427 4.58895C16.8112 4.62848 17.1924 4.69363 17.568 4.78395V8.10895C17.3509 8.08869 17.133 8.07668 16.915 8.07295C16.6707 8.0666 16.4264 8.0636 16.182 8.06395C15.475 8.06395 14.923 8.15995 14.507 8.37295C14.2273 8.51326 13.9922 8.72862 13.828 8.99495C13.57 9.41495 13.454 9.98995 13.454 10.7469V12.0439H17.373L16.987 14.1469L16.7 15.7109H13.454V23.9559C19.396 23.2379 24 18.1789 24 12.0439C24 5.41695 18.627 0.0439453 12 0.0439453C5.373 0.0439453 0 5.41695 0 12.0439C0 17.6719 3.874 22.3939 9.101 23.6909Z"
+                                            fill="#667085" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_1084_133">
+                                            <rect width="24" height="24" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+
+                            <a target="_blank"
+                                href="https://www.linkedin.com/in/siddharth-patel-4557716a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 200 200"
+                                    fill="none">
+                                    <path
+                                        d="M170.391 170.433H140.775V124.024C140.775 112.958 140.55 98.7167 125.341 98.7167C109.9 98.7167 107.541 110.759 107.541 123.208V170.433H77.9247V75H106.375V88.0078H106.758C110.734 80.5078 120.4 72.5917 134.841 72.5917C164.85 72.5917 170.4 92.3422 170.4 118.05L170.391 170.433ZM44.475 61.9417C34.9417 61.9417 27.2833 54.225 27.2833 44.7333C27.2833 35.25 34.95 27.5417 44.475 27.5417C53.975 27.5417 61.675 35.25 61.675 44.7333C61.675 54.225 53.9667 61.9417 44.475 61.9417ZM59.325 170.433H29.625V75H59.325V170.433ZM185.208 0H14.7583C6.6 0 0 6.45 0 14.4083V185.592C0 193.558 6.6 200 14.7583 200H185.184C193.334 200 200 193.558 200 185.592V14.4083C200 6.45 193.334 0 185.184 0H185.208Z"
+                                        fill="#667085" />
+                                </svg>
+                            </a>
+
+                            <a target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M18.901 1.15308H22.581L14.541 10.3431L24 22.8461H16.594L10.794 15.2621L4.156 22.8461H0.474L9.074 13.0161L0 1.15408H7.594L12.837 8.08608L18.901 1.15308ZM17.61 20.6441H19.649L6.486 3.24008H4.298L17.61 20.6441Z"
+                                        fill="#667085" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner" id="bannerImg">
+        <img src="./public/Banner-background.png" alt="Banner Image" />
+        <div class="banner-text">
+            <p id="comingSoon2">Coming Soon</p>
+            <p id="comingSoon1">Coming Soon</p>
+        </div>
+    </div>
+
+    <div class="content-text">
+        <div class="content-text-container">
+            <div class="content-text-container-text">
+                <p>A Companion Who can do it all</p>
+            </div>
+            <div class="content-text-change">
+                <p>Because You Deserve Better</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="moving-imgs">
+        <div class="vehicle-moving-imgs">
+            <div class="img-card main-img">
+                <img src="./public/img-1.png" />
+                <div class="img-card-content">
+                    <p class="img-card-content-sub">Rugged</p>
+                    <p class="img-card-content-main">power of a motorcycle</p>
+                </div>
+                <div class="img-card-background"></div>
+            </div>
+            <div class="img-card back-img">
+                <img src="./public/img-3.png" />
+                <div class="img-card-content">
+                    <p class="img-card-content-sub">Stylish</p>
+                    <p class="img-card-content-main">Comfort Of A Scooter</p>
+                </div>
+                <div class="img-card-background"></div>
+            </div>
+            <div class="img-card back-img">
+                <img src="./public/img-2.png" />
+                <div class="img-card-content">
+                    <p class="img-card-content-sub">Modern</p>
+                    <p class="img-card-content-main">All In A Moped</p>
+                </div>
+                <div class="img-card-background"></div>
+            </div>
+
+            <div class="img-card-3">
+                <img src="./public/img-1.png" />
+                <div class="img-card-content">
+                    <p class="img-card-content-sub">Rugged</p>
+                    <p class="img-card-content-main">Power Of A Motorcycle</p>
+                </div>
+                <div class="img-card-background"></div>
+            </div>
+            <div class="img-card-3">
+                <img src="./public/img-3.png" />
+                <div class="img-card-content">
+                    <p class="img-card-content-sub">Stylish</p>
+                    <p class="img-card-content-main">Comfort Of A Scooter</p>
+                </div>
+                <div class="img-card-background"></div>
+            </div>
+            <div class="img-card-3">
+                <img src="./public/img-2.png" />
+                <div class="img-card-content">
+                    <p class="img-card-content-sub">Modern</p>
+                    <p class="img-card-content-main">All In A Moped</p>
+                </div>
+                <div class="img-card-background"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="moving-imgs-1">
+        <div class="unveilling-soon">
+            <p class="unveilling-soon-main">Unveiling Soon</p>
+            <p class="unveilling-soon-sub">Tri Wheel Revolution</p>
+        </div>
+        <div class="three-wheeler-frame">
+            <div class="img-card-1 main-img-1">
+                <img src="./public/im-1-1.png" />
+                <div class="img-card-content">
+                    <p class="img-card-content-sub">e rickshaw loader</p>
+                </div>
+                <div class="img-card-background"></div>
+            </div>
+            <div class="img-card-1 back-img-1">
+                <img src="./public/img-1-2.png" />
+                <div class="img-card-content">
+                    <p class="img-card-content-sub">e rickshaw passenger</p>
+                </div>
+                <div class="img-card-background"></div>
+            </div>
+            <div class="img-card-2">
+                <img id="photo-change" src="./public/im-1-1.png" />
+                <div class="img-card-content">
+                    <p class="img-card-content-sub">E Rickshaw loader</p>
+                </div>
+                <div class="img-card-background"></div>
+            </div>
+            <div class="img-card-2">
+                <img src="./public/img-1-2.png" />
+                <div class="img-card-content">
+                    <p class="img-card-content-sub">e rickshaw passenger</p>
+                </div>
+                <div class="img-card-background"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-line"></div>
+        <div class="footer-container">
+            <div class="logo-copyrights">
+                <div class="logo-copyrights-logo">
+                    <img src="./public/logo.png" />
+                    <p>GreenWay Mobility</p>
+                </div>
+                <div class="logo-copyrights-copyright">
+                    <p>© 2024 All rights reserved.</p>
+                    <p>
+                        Crafted by
+                        <a href="https://www.koiosengg.com/" target="_blank">Koios Engineering Solutions</a>
+                    </p>
+                </div>
+            </div>
+            <div class="Info">
+                <div class="Info-detail">
+                    <a href="tel:+919167480227" id="phoneNumber">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M21 16.42V19.9561C21 20.4811 20.5941 20.9167 20.0705 20.9537C19.6331 20.9846 19.2763 21 19 21C10.1634 21 3 13.8366 3 5C3 4.72371 3.01545 4.36687 3.04635 3.9295C3.08337 3.40588 3.51894 3 4.04386 3H7.5801C7.83678 3 8.05176 3.19442 8.07753 3.4498C8.10067 3.67907 8.12218 3.86314 8.14207 4.00202C8.34435 5.41472 8.75753 6.75936 9.3487 8.00303C9.44359 8.20265 9.38171 8.44159 9.20185 8.57006L7.04355 10.1118C8.35752 13.1811 10.8189 15.6425 13.8882 16.9565L15.4271 14.8019C15.5572 14.6199 15.799 14.5573 16.001 14.6532C17.2446 15.2439 18.5891 15.6566 20.0016 15.8584C20.1396 15.8782 20.3225 15.8995 20.5502 15.9225C20.8056 15.9483 21 16.1633 21 16.42Z"
+                                fill="#667085" />
+                        </svg>
+                        <p>+91 91674 80227</p>
+                    </a>
+                </div>
+                <div class="Info-detail">
+                    <a href="mailto:Info@greenwaymobility.com" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM12.0606 11.6829L5.64722 6.2377L4.35278 7.7623L12.0731 14.3171L19.6544 7.75616L18.3456 6.24384L12.0606 11.6829Z"
+                                fill="#667085" />
+                        </svg>
+                        <p>Info@greenwaymobility.com</p>
+                    </a>
+                </div>
+                <div class="add">
+                    <a href="https://maps.app.goo.gl/PcMMHn6eUKsctb2R7?g_st=iw" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M18.364 17.364L12 23.7279L5.63604 17.364C2.12132 13.8492 2.12132 8.15076 5.63604 4.63604C9.15076 1.12132 14.8492 1.12132 18.364 4.63604C21.8787 8.15076 21.8787 13.8492 18.364 17.364ZM12 15C14.2091 15 16 13.2091 16 11C16 8.79086 14.2091 7 12 7C9.79086 7 8 8.79086 8 11C8 13.2091 9.79086 15 12 15ZM12 13C10.8954 13 10 12.1046 10 11C10 9.89543 10.8954 9 12 9C13.1046 9 14 9.89543 14 11C14 12.1046 13.1046 13 12 13Z"
+                                fill="#667085" />
+                        </svg>
+                        <p>
+                            302, JP Sapphire, Nr. Aaykar Bhavan,<br />
+                            Race Course Ring Road. Rajkot -<br />
+                            360001, Gujarat, India
+                        </p>
+                    </a>
+                </div>
+                <div class="info-logo">
+                    <a target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <g clip-path="url(#clip0_1084_133)">
+                                <path
+                                    d="M9.101 23.6909V15.7109H6.627V12.0439H9.101V10.4639C9.101 6.37895 10.949 4.48595 14.959 4.48595C15.36 4.48595 15.914 4.52795 16.427 4.58895C16.8112 4.62848 17.1924 4.69363 17.568 4.78395V8.10895C17.3509 8.08869 17.133 8.07668 16.915 8.07295C16.6707 8.0666 16.4264 8.0636 16.182 8.06395C15.475 8.06395 14.923 8.15995 14.507 8.37295C14.2273 8.51326 13.9922 8.72862 13.828 8.99495C13.57 9.41495 13.454 9.98995 13.454 10.7469V12.0439H17.373L16.987 14.1469L16.7 15.7109H13.454V23.9559C19.396 23.2379 24 18.1789 24 12.0439C24 5.41695 18.627 0.0439453 12 0.0439453C5.373 0.0439453 0 5.41695 0 12.0439C0 17.6719 3.874 22.3939 9.101 23.6909Z"
+                                    fill="#667085" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_1084_133">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+
+                    <a target="_blank"
+                        href="https://www.linkedin.com/in/siddharth-patel-4557716a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><svg
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 200 200" fill="none">
+                            <path
+                                d="M170.391 170.433H140.775V124.024C140.775 112.958 140.55 98.7167 125.341 98.7167C109.9 98.7167 107.541 110.759 107.541 123.208V170.433H77.9247V75H106.375V88.0078H106.758C110.734 80.5078 120.4 72.5917 134.841 72.5917C164.85 72.5917 170.4 92.3422 170.4 118.05L170.391 170.433ZM44.475 61.9417C34.9417 61.9417 27.2833 54.225 27.2833 44.7333C27.2833 35.25 34.95 27.5417 44.475 27.5417C53.975 27.5417 61.675 35.25 61.675 44.7333C61.675 54.225 53.9667 61.9417 44.475 61.9417ZM59.325 170.433H29.625V75H59.325V170.433ZM185.208 0H14.7583C6.6 0 0 6.45 0 14.4083V185.592C0 193.558 6.6 200 14.7583 200H185.184C193.334 200 200 193.558 200 185.592V14.4083C200 6.45 193.334 0 185.184 0H185.208Z"
+                                fill="#667085" />
+                        </svg>
+                    </a>
+
+                    <a target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M18.901 1.15308H22.581L14.541 10.3431L24 22.8461H16.594L10.794 15.2621L4.156 22.8461H0.474L9.074 13.0161L0 1.15408H7.594L12.837 8.08608L18.901 1.15308ZM17.61 20.6441H19.649L6.486 3.24008H4.298L17.61 20.6441Z"
+                                fill="#667085" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
